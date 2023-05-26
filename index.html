@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230527003001">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomePage</title>
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="preloader__inner">
+			<div class="preloader__spinner"></div>
+			<div class="preloader__text text-size">Loading...</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu">
+					<h1 class="header__title text-size">Игра угадай число!</h1>
+					<nav class="header__choose">
+						<button type="button" class="header__level easy">Легкий уровень :<span>(Между 1 и 20)</span></button>
+						<button type="button" class="header__level medium">Средний уровень:<span>(Между 1 и 50)</span></button>
+						<button type="button" class="header__level hard">Тяжелый уровень:<span>(Между 1 и 100)</span></button>
+					</nav>
+				</div>
+				<div class="header__body">
+					<button class="header__button again">Сначала!</button>
+					<h2 class="header__title text-size">Угадай Число!</h2>
+					<p class="header__between text-size"></p>
+				</div>
+				<div class="header__question">???</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<section class="page__left">
+					<h3 class="page__guess-message text-size"></h3>
+					<input type="number" class="page__number-input">
+					<button class="page__button check">Проверить!</button>
+				</section>
+				<section class="page__right">
+					<h4 class="page__guess-message text-size"></h4>
+					<p class="page__label-score text-size">Очки: <span class="page__score text-size"></span></p>
+					<p class="page__label-highscore text-size">
+						Лучший результат: <span class="page__highscore text-size"></span>
+					</p>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<button type="button" class="footer__button">Изменить уровень сложности</button>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230527003001"></script>
+</body>
+
+</html>
