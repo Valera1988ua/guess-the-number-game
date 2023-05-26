@@ -523,6 +523,26 @@ h6 {
     font-size: 3.375rem;
   }
 
+  .page__number-input::-webkit-input-placeholder {
+    font-size: 2.625rem;
+  }
+
+  .page__number-input::-moz-placeholder {
+    font-size: 2.625rem;
+  }
+
+  .page__number-input:-ms-input-placeholder {
+    font-size: 2.625rem;
+  }
+
+  .page__number-input::-ms-input-placeholder {
+    font-size: 2.625rem;
+  }
+
+  .page__number-input::placeholder {
+    font-size: 2.625rem;
+  }
+
   .page__button {
     font-size: 1.5rem;
   }
@@ -582,6 +602,26 @@ h6 {
   }
 
   .page__number-input {
+    font-size: 1.5rem;
+  }
+
+  .page__number-input::-webkit-input-placeholder {
+    font-size: 1.5rem;
+  }
+
+  .page__number-input::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+
+  .page__number-input:-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+
+  .page__number-input::-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+
+  .page__number-input::placeholder {
     font-size: 1.5rem;
   }
 
@@ -733,6 +773,42 @@ h6 {
 @supports not (font-size: clamp( 1.5rem , 0.8181818182rem  +  3.4090909091vw , 3.375rem )) {
     .page__number-input {
       font-size: calc(1.5rem + 1.875 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (font-size: clamp( 1.5rem , 1.0909090909rem  +  2.0454545455vw , 2.625rem )) {
+    .page__number-input::-webkit-input-placeholder {
+      font-size: clamp( 1.5rem , 1.0909090909rem  +  2.0454545455vw , 2.625rem );
+    }
+    .page__number-input::-moz-placeholder {
+      font-size: clamp( 1.5rem , 1.0909090909rem  +  2.0454545455vw , 2.625rem );
+    }
+    .page__number-input:-ms-input-placeholder {
+      font-size: clamp( 1.5rem , 1.0909090909rem  +  2.0454545455vw , 2.625rem );
+    }
+    .page__number-input::-ms-input-placeholder {
+      font-size: clamp( 1.5rem , 1.0909090909rem  +  2.0454545455vw , 2.625rem );
+    }
+    .page__number-input::placeholder {
+      font-size: clamp( 1.5rem , 1.0909090909rem  +  2.0454545455vw , 2.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 1.0909090909rem  +  2.0454545455vw , 2.625rem )) {
+    .page__number-input::-webkit-input-placeholder {
+      font-size: calc(1.5rem + 1.125 * (100vw - 20rem) / 55);
+    }
+    .page__number-input::-moz-placeholder {
+      font-size: calc(1.5rem + 1.125 * (100vw - 20rem) / 55);
+    }
+    .page__number-input:-ms-input-placeholder {
+      font-size: calc(1.5rem + 1.125 * (100vw - 20rem) / 55);
+    }
+    .page__number-input::-ms-input-placeholder {
+      font-size: calc(1.5rem + 1.125 * (100vw - 20rem) / 55);
+    }
+    .page__number-input::placeholder {
+      font-size: calc(1.5rem + 1.125 * (100vw - 20rem) / 55);
     }
 }
 
