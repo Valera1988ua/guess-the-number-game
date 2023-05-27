@@ -49,10 +49,7 @@
     const chooseLevel = e => {
         e.preventDefault();
         const {target} = e;
-        setTimeout((() => {
-            headerMenu.classList.add("start-game");
-        }), 300);
-        if (target.classList.contains("easy")) {
+        if (target && target.classList.contains("easy")) {
             target.classList.add("choose");
             storageEasyLevelScore = true;
             highscore = localStorageSetResult();
@@ -61,7 +58,8 @@
             hightScore.textContent = highscore || 0;
             infoLevel.textContent = "(Между 1 и 20)";
             secretNumber = generatorSecretNumber(20);
-        } else if (target.classList.contains("medium")) {
+            headerMenu.classList.add("start-game");
+        } else if (target && target.classList.contains("medium")) {
             target.classList.add("choose");
             storageMediumLevelScore = true;
             highscore = localStorageSetResult();
@@ -70,7 +68,8 @@
             hightScore.textContent = highscore || 0;
             infoLevel.textContent = "(Между 1 и 50)";
             secretNumber = generatorSecretNumber(50);
-        } else if (target.classList.contains("hard")) {
+            headerMenu.classList.add("start-game");
+        } else if (target && target.classList.contains("hard")) {
             target.classList.add("choose");
             storageHardLevelScore = true;
             highscore = localStorageSetResult();
@@ -80,6 +79,7 @@
             infoLevel.textContent = "(Между 1 и 100)";
             hardLevel = true;
             secretNumber = generatorSecretNumber(100);
+            headerMenu.classList.add("start-game");
         }
     };
     const startGame = () => {
